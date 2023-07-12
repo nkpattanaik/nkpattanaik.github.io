@@ -1,0 +1,16 @@
+---
+layout: default
+title: PROJECTS
+---
+<h1>PROJECTS</h1>
+
+<ul>
+  {% for project in site.projects %}
+    <li>
+      <h2><a href="{{ project.url }}">{{ project.project_name }}</a></h2>
+      <h3>{{ project.writer }}</h3>
+      <h3><a href="{{ project.GH_link }}">GitHub Link</a></h3>
+      <p>{{ project.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
