@@ -2,4 +2,118 @@
   color: green;
 }
 
+/* Page Layout */
+html {
+  background-color: #e7e7e7;
+}
+
+html, body {
+  font-size: 1.125em;
+  text-align: left;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", "Aarial", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  max-width: 45em;
+  padding: 0.5em 3em 1em 3em;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: solid 0.1em #c0c0c0;
+}
+
+/* Basic Elements */
+h1, h2, h3, h4, h5, strong, dt, th {
+  color: #333;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0 0.87em 0;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 1em 0 0.87em 0;
+}
+
+h4 {
+  font-size: 1.13em;
+  margin: 1em 0 0.88em 0;
+}
+
+h5 {
+  font-size: 1em;
+  margin: 1em 0 1em 0;
+}
+
+p, pre, li, dt, dd, table, code, address {
+  line-height: 1.3em;
+}
+
+/* Lists of underlined links are difficult to read. The top margin
+   gives a little more spacing between entries. */
+ul li {
+  margin: 0.5em 1em;
+}
+
+ol li {
+  margin: 1em;
+}
+
+ol ul li {
+  margin: 0.5em 1em;
+}
+
+ul li p, ul ul li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+ul ul, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* links colorization */
+a:active {
+  color: black;
+}
+
+a[href] {
+  color: #005090;
+}
+
+a[href]:visited {
+  color: #100070;
+}
+
+a[href]:active, a[href]:hover {
+  color: #100070;
+  text-decoration: none;
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+ul {
+  list-style: square outside;
+}
+
+ul ul, ol ul {
+  list-style: circle;
+}
+
+li {
+  list-style: inherit;
+}
+
 /*# sourceMappingURL=styles.css.map */
