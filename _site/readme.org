@@ -1,0 +1,6 @@
+#+TITLE: README GitHub
+#+AUTHOR: Nitish Pattanaik
+
+* My Personal Blog
+This is the source code of my personal blog. It's a simple html and css(a little bit) blog. It's so good for it's simplicity.
+Feel free to send PRs addressing typos, bad grammar, visual glitches, etc.

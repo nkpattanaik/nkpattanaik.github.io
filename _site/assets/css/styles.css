@@ -8,11 +8,9 @@ html {
 }
 
 html, body {
-  font-size: 1.125em;
   text-align: left;
   text-decoration: none;
   font-family: "IBM Plex Sans Condensed", "Aarial", sans-serif;
-  font-weight: normal;
 }
 
 body {
@@ -28,6 +26,7 @@ body {
 h1, h2, h3, h4, h5, strong, dt, th {
   color: #333;
   font-weight: bold;
+  font-family: inherit;
 }
 
 h1 {
@@ -55,8 +54,17 @@ h5 {
   margin: 1em 0 1em 0;
 }
 
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1.05em;
+}
+
 p, pre, li, dt, dd, table, code, address {
   line-height: 1.3em;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.05em;
 }
 
 /* Lists of underlined links are difficult to read. The top margin
@@ -123,11 +131,22 @@ li {
   display: flex;
   border: 3px solid #181818;
   background-color: #a2a9b0;
+  flex: auto;
 }
 
 .nav-links {
   text-align: right;
   list-style-type: none;
+  justify-content: center;
+}
+
+.nav-bar-favicon figure {
+  margin: 0;
+  padding: 0.5em;
+}
+
+.nav-bar-favicon figure figcaption {
+  padding: auto;
 }
 
 /* footer styling */
@@ -136,6 +155,7 @@ li {
   color: #181818;
   border: 2px solid #121619;
   justify-content: center;
+  padding: 0.3em;
 }
 
 #footer-list:first-child li {
@@ -143,7 +163,8 @@ li {
 }
 
 #footer-list {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 #footer-list a {
