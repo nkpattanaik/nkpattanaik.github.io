@@ -3,9 +3,14 @@
     <a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}>HOME</a>
     <a href="/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>ABOUT</a>
 </nav>
+
 -->
 <nav>
+    <ul style="list-style-type: none">
     {% for item in site.data.navigation %}
+    <li style="display: inline">
     <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}> {{ item.name }} </a>
+    </li>
     {% endfor %}
+    </ul>
 </nav>

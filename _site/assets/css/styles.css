@@ -12,6 +12,7 @@ html, body {
   text-align: left;
   text-decoration: none;
   font-family: "IBM Plex Sans Condensed", "Aarial", sans-serif;
+  font-weight: normal;
 }
 
 body {
@@ -96,10 +97,11 @@ a[href]:visited {
 }
 
 a[href]:active, a[href]:hover {
-  color: #100070;
+  color: #0f62fe;
   text-decoration: none;
 }
 
+/* list styling */
 ol {
   list-style: decimal outside;
 }
@@ -114,6 +116,38 @@ ul ul, ol ul {
 
 li {
   list-style: inherit;
+}
+
+/* navigation bar styling */
+.nav-bar {
+  display: flex;
+  border: 3px solid #181818;
+  background-color: #a2a9b0;
+}
+
+.nav-links {
+  text-align: right;
+  list-style-type: none;
+}
+
+/* footer styling */
+.footer-socials {
+  background-color: #a2a9b0;
+  color: #181818;
+  border: 2px solid #121619;
+  justify-content: center;
+}
+
+#footer-list:first-child li {
+  display: inline;
+}
+
+#footer-list {
+  margin: 0 auto;
+}
+
+#footer-list a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
